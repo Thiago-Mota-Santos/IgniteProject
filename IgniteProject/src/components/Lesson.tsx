@@ -14,7 +14,7 @@ const Lesson: React.FC<LessonProps> = (props) => {
   const isLessonAvailable = isPast(props.AvailableAt);
   const availableDateFormatted = format(
     props.AvailableAt,
-    "EEEE ' * ' 'de' 'MMMM' '*' 'k''h''mm'",
+    "EEEE'  •  'd' de  'MMMM' •  'k'h'mm",
     {
       locale: ptBR,
     }
@@ -22,7 +22,7 @@ const Lesson: React.FC<LessonProps> = (props) => {
 
   return (
     <a href="#">
-      <span className="text-gray-300">{props.AvailableAt.toString()}</span>
+      <span className="text-gray-300">{availableDateFormatted}</span>
 
       <div className="rounded border border-gray-500 p-4 mt-2">
         <header className="flex items-center justify-between">

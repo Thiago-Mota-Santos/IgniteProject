@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import SideBar from "../components/SideBar";
+import Video from "../components/Video";
 
 const Event: React.FC = () => {
   return (
