@@ -80,7 +80,7 @@ const Video: React.FC<VideoProps> = (props) => {
 
             <div className="flex items-center gap-4 mt-6">
               <img
-                className="h-16 w-16 rounded-full border-2 border-blue-500"
+                className="h-16 w-16 rounded-full border-2 border-blue-500 shrink-0"
                 src={data.lesson.teacher.avatarUrl}
                 alt=""
               />
