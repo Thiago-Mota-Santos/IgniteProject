@@ -11,15 +11,15 @@ const CREATE_SUBSCRIBE_MUTATION = gql`
   }
 `;
 
-const Subscribe: React.FC = () => {
+export function Subscribe() {
   const navigate = useNavigate();
-  const [name, setName] = useState(" ");
-  const [email, setEmail] = useState(" ");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
   const [createSubscribe, { loading }] = useMutation(CREATE_SUBSCRIBE_MUTATION);
 
   async function handleSubmit(event: FormEvent) {
-    event?.preventDefault();
+    event.preventDefault();
 
     await createSubscribe({
       variables: {
@@ -28,7 +28,7 @@ const Subscribe: React.FC = () => {
       },
     });
 
-    navigate("/Event");
+    navigate("/event");
   }
 
   return (
@@ -80,6 +80,6 @@ const Subscribe: React.FC = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Subscribe;
