@@ -48,7 +48,7 @@ caso a aba contendo o projeto não abra automáticament em seu navegador, acesse
 Para usar (ignite-project), siga estas etapas:
   
 * Cadastre seu nome e usuário;
-* Navegue entre as aulas ficcionais, para verificar o layouy.
+* Navegue entre as aulas ficcionais, para verificar o layout.
  
 
 
